@@ -1,0 +1,137 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://scripts/main.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/pt.png" type="Texture" id=3]
+[ext_resource path="res://assets/pt_off.png" type="Texture" id=4]
+[ext_resource path="res://assets/font/PoetsenOne-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/es.png" type="Texture" id=6]
+[ext_resource path="res://assets/es_off.png" type="Texture" id=7]
+[ext_resource path="res://assets/en.png" type="Texture" id=8]
+[ext_resource path="res://assets/en_off.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/hello_pt.png" type="Texture" id=10]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = ExtResource( 5 )
+
+[sub_resource type="ButtonGroup" id=3]
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 5 )
+
+[node name="main" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bkg_bottom" type="ColorRect" parent="."]
+margin_top = 856.0
+margin_right = 720.0
+margin_bottom = 1280.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bkg_topo" type="ColorRect" parent="."]
+margin_right = 720.0
+margin_bottom = 300.0
+color = Color( 0.717647, 0, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icon" type="Sprite" parent="."]
+position = Vector2( 360, 145.92 )
+scale = Vector2( 0.569874, 0.569874 )
+texture = ExtResource( 2 )
+
+[node name="vbox" type="VBoxContainer" parent="."]
+margin_left = 119.0
+margin_top = 303.0
+margin_right = 1083.0
+margin_bottom = 1403.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/separation = 30
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pt_BR" type="CheckBox" parent="vbox" groups=[
+"language_btn",
+]]
+margin_top = 208.0
+margin_right = 964.0
+margin_bottom = 416.0
+theme = SubResource( 1 )
+custom_icons/radio_checked = ExtResource( 3 )
+custom_icons/checked = ExtResource( 3 )
+custom_icons/radio_unchecked = ExtResource( 4 )
+custom_icons/unchecked = ExtResource( 4 )
+custom_fonts/font = SubResource( 2 )
+shortcut_in_tooltip = false
+action_mode = 0
+group = SubResource( 3 )
+text = "PORTUGUESE"
+flat = true
+expand_icon = true
+
+[node name="en_US" type="CheckBox" parent="vbox" groups=[
+"language_btn",
+]]
+margin_top = 446.0
+margin_right = 964.0
+margin_bottom = 654.0
+theme = SubResource( 1 )
+custom_icons/radio_checked = ExtResource( 8 )
+custom_icons/checked = ExtResource( 8 )
+custom_icons/radio_unchecked = ExtResource( 9 )
+custom_icons/unchecked = ExtResource( 9 )
+custom_fonts/font = SubResource( 2 )
+shortcut_in_tooltip = false
+action_mode = 0
+group = SubResource( 3 )
+text = "ENGLISH"
+flat = true
+expand_icon = true
+
+[node name="es_ES" type="CheckBox" parent="vbox" groups=[
+"language_btn",
+]]
+margin_top = 684.0
+margin_right = 964.0
+margin_bottom = 892.0
+theme = SubResource( 1 )
+custom_icons/radio_checked = ExtResource( 6 )
+custom_icons/checked = ExtResource( 6 )
+custom_icons/radio_unchecked = ExtResource( 7 )
+custom_icons/unchecked = ExtResource( 7 )
+custom_fonts/font = SubResource( 2 )
+shortcut_in_tooltip = false
+action_mode = 0
+group = SubResource( 3 )
+text = "SPANISH"
+flat = true
+expand_icon = true
+
+[node name="label" type="Label" parent="."]
+margin_left = 303.0
+margin_top = 922.0
+margin_right = 651.0
+margin_bottom = 1243.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TEXT1"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hello" type="Sprite" parent="."]
+position = Vector2( 161.197, 966.579 )
+texture = ExtResource( 10 )
