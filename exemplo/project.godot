@@ -22,10 +22,6 @@ config/name_es_ES="Localidad"
 config/name_en_US="Locale"
 config/name_en="sample"
 
-[autoload]
-
-common="*res://scripts/common.gd"
-
 [display]
 
 window/size/width=720
@@ -38,6 +34,7 @@ window/stretch/aspect="keep"
 
 [locale]
 
+fallback="pt_BR"
 translations=PoolStringArray( "res://language/language.pt_BR.translation", "res://language/language.en_US.translation", "res://language/language.es_ES.translation" )
 translation_remaps={
 "res://assets/images/hello_pt.png": PoolStringArray( "res://assets/images/hello_en.png:en_US", "res://assets/images/hello_es.png:es_ES" )

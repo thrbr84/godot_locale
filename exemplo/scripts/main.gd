@@ -4,8 +4,6 @@ extends Control
 onready var current_language = TranslationServer.get_locale()
 
 func _ready():
-	prints(current_language)
-	
 	# conecta os botões de idioma
 	for btn in get_tree().get_nodes_in_group("language_btn"):
 		btn.connect("toggled", self, "_on_language_toggled", [btn.name])
