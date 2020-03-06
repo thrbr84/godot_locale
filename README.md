@@ -4,9 +4,9 @@ Como configurar a localização do seu jogo para vários-idiomas
 
 ### Explicação
 Video com a explicação completa no meu canal do Youtube: 
-- https://www.youtube.com/watch?v=[VIDEO]
+- https://www.youtube.com/watch?v=cX7bh-Hdk0g
 
-[![Video com a explicação](https://img.youtube.com/vi/[VIDEO]/0.jpg)](https://www.youtube.com/watch?v=[VIDEO])
+[![Video com a explicação](https://img.youtube.com/vi/cX7bh-Hdk0g/0.jpg)](https://www.youtube.com/watch?v=cX7bh-Hdk0g)
 
 # Documentação oficial
 https://docs.godotengine.org/en/3.2/tutorials/i18n/internationalizing_games.html
