@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/main.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -20,6 +20,10 @@ font_data = ExtResource( 5 )
 [sub_resource type="ButtonGroup" id=3]
 
 [sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
 size = 40
 font_data = ExtResource( 5 )
 
@@ -135,3 +139,15 @@ __meta__ = {
 [node name="hello" type="Sprite" parent="."]
 position = Vector2( 161.197, 966.579 )
 texture = ExtResource( 10 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 296.608
+margin_top = 1093.04
+margin_right = 649.608
+margin_bottom = 1233.04
+custom_fonts/bold_font = SubResource( 5 )
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "RICH1"
+text = "RICH1"

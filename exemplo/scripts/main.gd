@@ -14,3 +14,7 @@ func _on_language_toggled(button_pressed, language):
 	if button_pressed:
 		TranslationServer.set_locale(language)
 		current_language = language
+		
+		# traduz um RichTextLabel sem perder formatação
+		$RichTextLabel.bbcode_text = tr("RICH1")
+		
